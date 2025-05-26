@@ -29,6 +29,10 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Read hello.txt
+        run: |
+          echo "Contents of hello.txt:"
+          cat hello.txt
 
       - name: Show success message
-        run: echo "✅ Build Success..001"
+        run: echo "✅ Build + Read Success..002 - txt file read"
